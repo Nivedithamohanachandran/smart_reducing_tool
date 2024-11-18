@@ -1,0 +1,13 @@
+<resources>
+    <!-- App name -->
+    <string name="home">Home</string> <!-- Replace "Home" with your actual app name -->
+
+    <!-- Time periods array -->
+
+    <string-array name="time_periods">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+</resources>

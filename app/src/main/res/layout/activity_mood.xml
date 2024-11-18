@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main container, typically LinearLayout or ConstraintLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling right now?"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+i1    1d/question1Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Good" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Okay" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not great" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you feel in control today?"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/question2Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How is your energy level?"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/question3Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="High" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Moderate" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Low" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp" />
+
+        <!-- Mood Image -->
+        <ImageView
+            android:id="@+id/moodImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <!-- Mood and Quote -->
+        <TextView
+            android:id="@+id/resultMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/resultQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
