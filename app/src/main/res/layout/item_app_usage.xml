@@ -1,59 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_background"
+    android:elevation="2dp">
 
-    <!-- Category TextView -->
-    <TextView
-        android:id="@+id/category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Category"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/appIconImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/app_icon"
+        android:scaleType="centerCrop" />
 
-    <!-- App Name and Time Spent Container -->
+    <!-- App Name and Usage Details -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <!-- App Name TextView -->
+        <!-- App Name -->
         <TextView
             android:id="@+id/appNameTextView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="App Name"
-            android:textSize="16sp" />
-
-        <!-- Time Spent TextView -->
-        <TextView
-            android:id="@+id/timeSpent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time Spent"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="App Name" />
+
+        <!-- Usage Duration -->
+        <TextView
+            android:id="@+id/usageDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            android:text="Usage Duration" />
     </LinearLayout>
-
-    <!-- Apps TextView -->
-    <TextView
-        android:id="@+id/apps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Apps"
-        android:textSize="16sp"
-        android:layout_marginTop="8dp" />
-
-    <!-- Usage Duration TextView -->
-    <TextView
-        android:id="@+id/usageDurationTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Duration"
-        android:textSize="16sp"
-        android:layout_marginTop="4dp" />
-
 </LinearLayout>

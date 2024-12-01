@@ -18,7 +18,7 @@
             android:paddingBottom="8dp"/>
 
         <RadioGroup
-            android:id="@+i1    1d/question1Group"
+            android:id="@+id/question1Group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Good" />

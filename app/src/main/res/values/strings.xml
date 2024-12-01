@@ -9,5 +9,8 @@
         <item>Weekly</item>
         <item>Monthly</item>
     </string-array>
+    <string name="date_picker">Pick a Date</string>
+    <string name="app_icon">App Icon</string>
+
 
 </resources>

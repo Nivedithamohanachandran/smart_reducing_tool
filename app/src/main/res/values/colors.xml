@@ -3,5 +3,14 @@
     <color name="purple_700">#3700B3</color>
     <color name="black">#000000</color>
     <color name="teal_200">#03DAC5</color>
-    <color name="white">#FFFFFF</color> <!-- You may need white as well -->
+    <color name="white">#FFFFFF</color>
+    <color name="royal_blue">#4169E1</color>
+    <!-- You may need white as well -->
+
+        <color name="colorSocialMedia">#FF5733</color>
+        <color name="colorProductivity">#33FF57</color>
+        <color name="colorEntertainment">#3357FF</color>
+        <color name="colorHealth">#FF33A1</color>
+        <color name="colorOthers">#FFC733</color>
+
 </resources>

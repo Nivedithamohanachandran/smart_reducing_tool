@@ -4,8 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
 public class AppUsageAdapter extends RecyclerView.Adapter<AppUsageAdapter.ViewHolder> {
@@ -35,6 +37,11 @@ public class AppUsageAdapter extends RecyclerView.Adapter<AppUsageAdapter.ViewHo
         return appUsageList.size();
     }
 
+    public void updateData(List<AppUsage> newAppUsageList) {
+        this.appUsageList = newAppUsageList;
+        notifyDataSetChanged();
+    }
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView appNameTextView;
         TextView usageDurationTextView;
@@ -45,5 +52,4 @@ public class AppUsageAdapter extends RecyclerView.Adapter<AppUsageAdapter.ViewHo
             usageDurationTextView = itemView.findViewById(R.id.usageDurationTextView);
         }
     }
-
 }

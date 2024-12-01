@@ -1,27 +1,29 @@
 package com.example.home;
 
 public class AppUsage {
-    private String appName;
-    private String usageDuration;
+    private final String appName;
+    private final String usageDuration;
+    private final float usagePercentage;
 
-    public AppUsage(String appName, String usageDuration) {
+    // Constructor
+    public AppUsage(String appName, String usageDuration, float usagePercentage) {
         this.appName = appName;
         this.usageDuration = usageDuration;
+        this.usagePercentage = usagePercentage;
     }
 
+    // Getter for app name
     public String getAppName() {
         return appName;
     }
 
-    public void setAppName(String appName) {
-        this.appName = appName;
-    }
-
+    // Getter for usage duration
     public String getUsageDuration() {
         return usageDuration;
     }
 
-    public void setUsageDuration(String usageDuration) {
-        this.usageDuration = usageDuration;
+    // Getter for usage percentage
+    public float getUsagePercentage() {
+        return usagePercentage;
     }
 }
